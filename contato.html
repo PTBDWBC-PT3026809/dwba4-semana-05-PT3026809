@@ -12,7 +12,7 @@
             <a href="eventos.html">EVENTOS</a> | 
             <a href="contato.html">CONTATO</a> | 
             <a href="sobre.html">SOBRE</a> | 
-            <a href="#">ENTRAR</a>
+            <a href="entrar.html">ENTRAR</a>
         </nav>
         <img src="dwba4_semana_imagens-master/Logo.jpg" alt="Instituto Federal São Paulo" width="250">
     </header>
@@ -23,25 +23,27 @@
             <ul>
                 <li>
                     <label for="nome">Nome </label>
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome" required>
                 </li>
                 <li>
                     <label for="email">E-Mail </label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                 </li>
                 <li>
                     <label for="telefone">Telefone </label>
-                    <input type="tel" id="telefone" name="telefone"> (99) 99999-9999
+                    <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" title="Digite no formato (99) 99999-9999" required> (99) 99999-9999
                 </li>
                 <li>
                     <label for="assunto">Assunto </label>
                     <select id="assunto" name="assunto">
                         <option value="">-- Selecione --</option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="sugestao">Sugestão</option>
                     </select>
                 </li>
                 <li>
                     <label for="mensagem">Mensagem </label><br>
-                    <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="30" required></textarea>
                 </li>
                 <li>
                     <fieldset style="display: inline-block;">
