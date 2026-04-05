@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos - Inscrição</title>
+    <link rel="icon" type="image/x-icon" href="dwba4_semana_imagens-master/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav style="text-align: right;">
+            <a href="index.html">HOME</a> | 
+            <a href="eventos.html">EVENTOS</a> | 
+            <a href="contato.html">CONTATO</a> | 
+            <a href="sobre.html">SOBRE</a> | 
+            <a href="#">ENTRAR</a>
+        </nav>
+        <img src="dwba4_semana_imagens-master/Logo.jpg" alt="Instituto Federal São Paulo" width="250">
+    </header>
+
+    <main>
+        <h2>Inscreva-se</h2>
+        <form action="#" method="post">
+            <label for="evento">Evento </label>
+            <select id="evento" name="evento">
+                <option value="voe_sem_asas">Voe sem asas</option>
+            </select>
+
+            <fieldset>
+                <legend>Informações de Acesso</legend>
+                <p>
+                    <label for="usuario">Usuário </label>
+                    <input type="text" id="usuario" name="usuario" value="username">
+                </p>
+                <p>
+                    <label for="senha">Senha </label>
+                    <input type="password" id="senha" name="senha" value="12345">
+                </p>
+                <p>
+                    <label for="confirme_senha">Confirme a Senha </label>
+                    <input type="password" id="confirme_senha" name="confirme_senha" value="12345">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <p>
+                    <label for="nome">Nome Completo </label>
+                    <input type="text" id="nome" name="nome" value="Professor Fabio Teixeira">
+                </p>
+                <p>
+                    <label for="email">E-mail </label>
+                    <input type="email" id="email" name="email" value="fabio.teixeira@ifsp.edu.br">
+                </p>
+                <p>
+                    <label for="celular">Celular </label>
+                    <input type="tel" id="celular" name="celular" placeholder="(99) 99999-9999"> (99) 99999-9999
+                </p>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
+                    <label><input type="radio" name="sexo" value="feminino"> Feminino</label>
+                </fieldset>
+                <p>
+                    <label for="nascimento">Data de Nascimento </label>
+                    <input type="date" id="nascimento" name="nascimento">
+                </p>
+                <p>
+                    <label for="cor">Cor Favorita </label>
+                    <input type="color" id="cor" name="cor" value="#000000">
+                </p>
+                <p>
+                    <label for="github">Perfil no Github </label>
+                    <input type="text" id="github" name="github">
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Inscrever</button>
+                <button type="reset">Limpar</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <br><br>
+        <div style="text-align: left;">
+            <a href="https://web.facebook.com/ifsppirituba" target="_blank">
+                <img src="dwba4_semana_imagens-master/facebook.png" alt="Página do Facebook do IFSP Pirituba" width="40">
+            </a>
+            <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
+        </div>
+    </footer>
+</body>
+</html>
